@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 const allowedOrigins = [
   "http://localhost:5173", // your local React app
-  "https://your-vercel-app.vercel.app", // replace with your Vercel URL
+  "https://anilbeyondchats.vercel.app", // replace with your Vercel URL
 ];
 
 app.use(
@@ -61,7 +61,7 @@ connectDB();
 
 // Server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, "127.0.0.1", () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
 
